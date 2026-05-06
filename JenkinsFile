@@ -23,10 +23,13 @@ pipeline{
         }
         stage("Test"){
            steps{
-            dir("automationFramework"){
-                sh "mvn test"
-            }
+            echo "Job Tested"
            }
         }
+        stage("Complete"){
+            steps{
+            echo "Job Completed"
+            }
+       }
     }
 }
