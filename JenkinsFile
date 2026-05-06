@@ -26,10 +26,5 @@ pipeline{
             echo "Job Tested"
            }
         }
-        stage("Complete"){
-            steps{
-            echo "Job Completed!"
-            }
-       }
     }
 }
